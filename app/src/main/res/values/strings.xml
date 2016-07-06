@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Stormy Watch</string>
+    <string name="error_title">Oops! Sorry!</string>
+    <string name="error_message">There was an error. Please try again.</string>
+    <string name="error_buttonText">OK</string>
+    <string name="network_unavailable">Network is unavailable!</string>
+    <string name="forecastApiKey"></string>
+    <string name="forecast_io">https://api.forecast.io/forecast/</string>
+    <string name="googleAPI">https://maps.googleapis.com/maps/api/geocode/json?address=</string>
+    <string name="googleApiKey"></string>
+</resources>

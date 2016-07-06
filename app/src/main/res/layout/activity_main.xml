@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="stormy.yellowbear.com.stormywatch.MainActivity"
+                android:background="#5d8aa8">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:id="@+id/tempLable"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/abc_primary_text_disable_only_material_dark"
+        android:inputType="textShortMessage|textMultiLine"
+        android:minLines="1"
+        android:textSize="100sp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/enterCity"
+        android:hint="Enter City"
+        android:gravity="center"
+        android:lines="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/tempLable"
+        android:layout_alignStart="@+id/tempLable"
+        android:layout_marginTop="45dp"
+        android:layout_alignRight="@+id/tempLable"
+        android:layout_alignEnd="@+id/tempLable"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="City Name"
+        android:gravity="center"
+        android:id="@+id/cityName"
+        android:textColor="@color/abc_primary_text_disable_only_material_dark"
+        android:layout_above="@+id/tempLable"
+        android:layout_alignLeft="@+id/tempLable"
+        android:layout_alignStart="@+id/tempLable"
+        android:layout_marginBottom="41dp"
+        android:layout_alignRight="@+id/tempLable"
+        android:layout_alignEnd="@+id/tempLable"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchCity"
+        android:layout_alignBottom="@+id/enterCity"
+        android:layout_toRightOf="@+id/enterCity"
+        android:layout_toEndOf="@+id/enterCity"
+        android:src="@drawable/ic_action_name"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/summary"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="69dp"
+        android:textColor="@color/abc_primary_text_disable_only_material_dark"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Humidity"
+        android:id="@+id/humidityLable"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/tempLable"
+        android:layout_toLeftOf="@+id/summary"
+        android:layout_toStartOf="@+id/summary"
+        android:layout_marginRight="29dp"
+        android:layout_marginEnd="29dp"
+        android:textColor="@color/abc_primary_text_disable_only_material_dark"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Precipitation"
+        android:id="@+id/precipitationLable"
+        android:textColor="@color/abc_primary_text_disable_only_material_dark"
+        android:layout_alignTop="@+id/humidityLable"
+        android:layout_toRightOf="@+id/summary"
+        android:layout_toEndOf="@+id/summary"
+        android:layout_marginLeft="9dp"
+        android:layout_marginStart="9dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="0"
+        android:id="@+id/humidityNumber"
+        android:layout_below="@+id/humidityLable"
+        android:layout_alignLeft="@+id/humidityLable"
+        android:layout_alignStart="@+id/humidityLable"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/abc_primary_text_disable_only_material_dark"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="0"
+        android:id="@+id/precipitationNumber"
+        android:textColor="@color/abc_primary_text_disable_only_material_dark"
+        android:layout_alignTop="@+id/humidityNumber"
+        android:layout_alignRight="@+id/tempLable"
+        android:layout_alignEnd="@+id/tempLable"/>
+
+</RelativeLayout>
