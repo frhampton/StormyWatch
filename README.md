@@ -4,7 +4,7 @@ Work in progress
 
 API keys hidden 
 
-Is a weather app the get your location and returns local temperature. You can also search for a city and get the temperature.
+Is a weather app that get your location and returns local temperature. You can also search for a city and get the temperature.
 
 Librays:
 Butter Knife
